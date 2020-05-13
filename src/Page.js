@@ -1,5 +1,6 @@
 import React from "react";
 import {Car} from "./Car";
+import {Form} from "./Form";
 
 function appendStringToDomClass(className, string) {
     let node = document.createElement('div');
@@ -44,6 +45,7 @@ export class Page extends React.Component {
             <button type="button" onClick={(event) => this.changeColor('red')}>make red</button>
             <button type="button" onClick={(event) => this.changeColor('blue')}>make blue</button>
             <div className={'logs'}/>
+            <Form />
         </div>;
     }
 }
